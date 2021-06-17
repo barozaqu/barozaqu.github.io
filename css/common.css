@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* maintenance & repair */
+:root {
+  /* color setting */
+  /* main color */
+  --hue-color: 42;
+  /* basic theme */
+  --primary-color: hsl(var(--hue-color), 90%, 55%);
+  --primary-bgcolor: hsl(var(--hue-color), 84%, 62%);
+  --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+  --black-color: hsl(var(--hue-color), 8%, 15%);
+  --gray-color: hsl(var(--hue-color), 8%, 45%);
+  --white-color: #fff;
+
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+
+  /* font setting */
+  /* --body-font: "Poppins", sans-serif; */
+  --big-font-size: 3rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813rem;
+
+  /* ----------------------- font-weight ----------------------- */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* ----------------------- margin bottom ----------------------- */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* ----------------------- z index ----------------------- */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* ----------------------- dark-theme ----------------------- */
+body.dark-theme {
+  --black-color: hsl(var(--hue-color), 8%, 95%); /* 흰색으로 바뀝니다 */
+  --body-color: hsl(var(--hue-color), 28%, 12%); /* 어두운 색으로 바뀝니다 */
+}
