@@ -9,74 +9,133 @@
 </head>
 <body>
 
-    <aside class="aside">
-        <header class="header">
-            <nav>
-                <div class="header__logo">
-                    logo image
-                    <!-- <img src="" alt=""> -->
-                </div>
-                <div class="header__themewrap">
-                    <button class="theme__btn--dark">
-                        mode
-                    </button>
-                </div>
-                <div class="menu__list">
-                    <div>intro</div>
-                    <div>skills</div>
-                    <div>portfolio</div>
-                    <div>about</div>
-                    <div>contact</div>
-                </div>
-                <div class="header__link">
-                    <div class="link__blog">
-                        blog
-                    </div>
-                    <div class="link__github">
-                        github
-                    </div>
-                </div>
-                <div class="footer__info">
-                    <div class="desc">
-                        <p>
-                            e-mail
-                        </p>
-                        <p>
-                            나 copyright all reserved
-                        </p>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </aside>
+    <div class="wrap">
 
-    <!-- scroll-up btn 아래로 내릴 경우 나타나는 up버튼 -->
-    <div class="scrollup">
-        up
+        <aside class="aside">
+            <header class="header">
+                <nav class="header__nav">
+                        <div class="header__logo--wrap">
+                            <div class="header__logo">
+                                logo image
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                        </div>
+                    <div class="header__theme">
+                        <button class="theme__dark">
+                            mode
+                        </button>
+                    </div>
+                    <div class="menu__content">
+                        <a href="#">
+                            <div class="menu__list">intro</div>
+                        </a>
+                        <a href="#">
+                            <div class="menu__list">skills</div>
+                        </a>
+                        <a href="#">
+                            <div class="menu__list">portfolio</div>
+                        </a>
+                        <a href="#">
+                            <div class="menu__list">about</div>
+                        </a>
+                        <a href="#">
+                            <div class="menu__list">contact</div>
+                        </a>
+                    </div>
+                    <div class="header__link">
+                        <div class="link__blog">
+                            blog
+                        </div>
+                        <div class="link__github">
+                            github
+                        </div>
+                    </div>
+                    <div class="footer__content">
+                        <div class="footer__info">
+                            <p>
+                                e-mail
+                            </p>
+                            <p>
+                                나 copyright all reserved
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </aside>
+    
+        <div class="main__container">
+            <!-- scroll-up btn 아래로 내릴 경우 나타나는 up버튼 -->
+            <div class="scrollup">
+                up
+            </div>
+        
+            <section class="intro">
+                <div class="inrto__title">
+                    <h2>안녕하세요</h2>
+                </div>
+                <div class="intro__sub">
+                    <p>기다리시는 게 있나요</p>
+                </div>
+                <!-- txt 인사말, sub -->
+            </section>
+            
+            <section class="skills">
+                <!-- dropdown -->
+                <div class="skills__title">
+                    <h2>Skills</h2>
+                </div>
+                <div class="skills__content">
+        
+                </div>
+            </section>
+            
+            <section class="portfolio">
+                <!-- multi slider auto/ click event modal/ btn to new webpage -->
+                <div class="sliders">
+        
+                </div>
+            </section>
+            
+            <section class="about">
+                <!-- accordian dropdown/ self interview -->
+                <div class="about__title">
+                    <h2>Self-interview</h2>
+                </div>
+                <div class="about_accordian">
+                    
+                </div>
+            </section>
+            
+            <section class="contact">
+                <!-- input form/ txt, kakao QR code(modal?) e-mail send -->
+                <div class="contact__title">
+                    <h2>
+                        궁금한 게 있으시면<br>
+                        언제든 연락주세요!
+                    </h2>
+                </div>
+                <div class="contact__kakao">
+                    <div class="kakao__modal">
+                        QR code
+                    </div>
+                </div>
+                <div class="contact__email">
+                    <form action="" class="email">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="submit" value="전송">
+                    </form>
+                </div>
+        
+            </section>
+            
+            
+    
+    
+        </div>    
     </div>
-
-    <section class="intro">
-        <!-- txt 인사말, sub -->
-    </section>
-    
-    <section class="skills">
-        <!-- dropdown -->
-    </section>
-    
-    <section class="portfolio">
-        <!-- multi slider auto/ click event modal/ btn to new webpage -->
-    </section>
-    
-    <section class="about">
-        <!-- accordian dropdown/ self interview -->
-    </section>
-    
-    <section class="contact">
-        <!-- input form/ txt, kakao QR code(modal?) e-mail send -->
-    </section>
-    
-    
-
 
 </body>
 </html>

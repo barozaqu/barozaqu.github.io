@@ -7,8 +7,9 @@
   left: 0;
   top: 0;
   height: 100vh;
-  width: 240px;
+  min-width: 240px;
   background: var(--primary-bgcolor);
+  overflow: hidden;
 }
 .header {
 }
@@ -16,4 +17,75 @@
   width: 50px;
   height: 50px;
   background: #000;
+}
+.wrap {
+  background: var(--body-color);
+  display: flex;
+}
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+  height: 70%;
+}
+.header__nav {
+  /* min-height: 500px; */
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.header__logo--wrap {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+}
+.header__logo {
+}
+.header__theme {
+}
+.theme__dark {
+}
+.menu__content {
+}
+.menu__list {
+  background: pink;
+  border: 1px solid #000;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.header__link {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: space-evenly;
+}
+.link__blog {
+  border: 1px solid #000;
+  height: 4rem;
+  width: 4rem;
+}
+.link__github {
+  border: 1px solid #000;
+  height: 4rem;
+  width: 4rem;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.footer__info {
+}
+.footer__info > p {
+  margin: 5px 0;
 }
