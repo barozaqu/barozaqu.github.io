@@ -89,3 +89,116 @@
 .footer__info > p {
   margin: 5px 0;
 }
+
+/* section */
+.main__container {}
+
+/* scroll-up btn */
+.scrollup {
+  position: fixed;
+  bottom: 10%;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background: #000;
+}
+/* intro section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  height: 50%;
+  background: skyblue;
+
+  margin-bottom: var(--mb-1-5);
+}
+.inrto__title {
+  margin-top: 5rem;
+  width: 70%;
+  height: 30%;
+  border: 1px solid #000;
+}
+.inrto__title > h1 {
+  margin-bottom: var(--mb-0-5);
+}
+.intro__sub {
+  width: 70%;
+  height: 40%;
+  border: 1px solid #000;
+}
+
+/* skills section */
+.skills {
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+}
+.skills__wrap {
+  /* width: 70%; */
+  /* border: 1px solid #000; */
+}
+.skills__title {
+  margin-bottom: var(--mb-0-5);
+}
+.skills__content {
+  display: flex;
+  /* background: green; */
+  /* flex-direction: column; */
+  /* border: 1px solid #000; */
+}
+.skills__content > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.skills__item {
+  display: flex;
+  width: 20rem;
+  height: 4rem;
+  margin: .5rem 1rem;
+  /* background: #000; */
+  border: 1px solid #000;
+}
+
+.skills__progressbar {
+  flex: 8;
+  /* background: pink; */
+  border: 1px solid #000;
+  align-self: center;
+}
+.progressbar__full {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  
+  /* background: grey; */
+  border: 1px solid #000;
+}
+.progressbar__percent:nth-of-type(1)   {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%;
+  height: 1.2rem;
+  
+  background: black;
+  color: #fff;
+  text-align: end;
+  line-height: 1.1rem;
+  border-radius: 0 .5rem .5rem 0;
+  border: 1px solid #000;
+}
+.skills__dropdown {
+  flex: 2;
+  width: 1rem;
+  border: 1px solid #000;
+}
+
+
+/* portfolio section */
+
+/* about section */
+
+/* contact section */
