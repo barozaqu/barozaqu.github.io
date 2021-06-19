@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url(./reset.css);
 @import url(./common.css);
-@import url(./slick.css);
+/* @import url(./slick.css); */
 
 .wrap {
   display: flex;
@@ -212,26 +212,16 @@
 }
 
 /* portfolio section */
-.portfolio {
+/* .portfolio {
   display: flex;
   flex-direction: column;
   height: 50vh;
-  border: 1px solid #000;
+  border: 1px solid #000; */
   /* margin-bottom: var(--mb-1-5); */
-}
-.portfolio__content {
-  /* width: 70%; */
-  border: 1px solid #000;
-}
-.slider {
-  display: flex;
-  background: pink;
-}
-.slider__item {
-  border: 1px solid #000;
-  width: 100px;
-  height: 100px;
-}
+
+
+
+
 /* about section */
 .about {
   height: 70vh;
@@ -316,3 +306,15 @@
 .email__item {
   display: block;
 }
+
+
+
+.center {
+  /* width: 100%; */
+}
+.portfolio__item {
+  border: 1px solid #000;
+  background: pink;
+  width: 100px;
+}
+
