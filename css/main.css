@@ -1,26 +1,24 @@
 @charset "utf-8";
 @import url(./reset.css);
 @import url(./common.css);
+@import url(./slick.css);
 
+.wrap {
+  display: flex;
+}
 .aside {
-  display: fixed;
+  z-index: 10;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
   min-width: 240px;
   background: var(--primary-bgcolor);
-  overflow: hidden;
-}
-.header {
 }
 .header__logo {
   width: 50px;
   height: 50px;
   background: #000;
-}
-.wrap {
-  background: var(--body-color);
-  display: flex;
 }
 .aside {
   display: flex;
@@ -76,7 +74,6 @@
   height: 4rem;
   width: 4rem;
 }
-
 .footer__content {
   display: flex;
   flex-direction: column;
@@ -90,11 +87,21 @@
   margin: 5px 0;
 }
 
-/* section */
-.main__container {}
+/* section start */
+.main__container {
+  padding-left: 240px;
+  /* 다른 방법 강구 */
+}
+/* 반응형 */
+/* .main__container {
+  position: relative;
+  left: 0;
+} */
+
 
 /* scroll-up btn */
 .scrollup {
+  z-index: 10;
   position: fixed;
   bottom: 10%;
   right: 2rem;
@@ -108,11 +115,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
-  height: 50%;
+  height: 50vh;
   background: skyblue;
-
-  margin-bottom: var(--mb-1-5);
+  /* margin-bottom: var(--mb-1-5); */
 }
 .inrto__title {
   margin-top: 5rem;
@@ -121,7 +126,7 @@
   border: 1px solid #000;
 }
 .inrto__title > h1 {
-  margin-bottom: var(--mb-0-5);
+  /* margin-bottom: var(--mb-0-5); */
 }
 .intro__sub {
   width: 70%;
@@ -134,10 +139,12 @@
   /* background: green; */
   display: flex;
   justify-content: center;
+  align-content: center;
+  height: 50vh;
 }
 .skills__wrap {
   /* width: 70%; */
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
 }
 .skills__title {
   margin-bottom: var(--mb-0-5);
@@ -151,11 +158,12 @@
 .skills__content > div {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  /* width: 50%; */
 }
 .skills__item {
   display: flex;
-  width: 20rem;
+  width: 19rem;
+  /* 마찬가지로 줄이면 컨텐츠 좌측 aside로 넘어감 */
   height: 4rem;
   margin: .5rem 1rem;
   /* background: #000; */
@@ -167,6 +175,13 @@
   /* background: pink; */
   border: 1px solid #000;
   align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.progressbar__desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .3rem;
 }
 .progressbar__full {
   position: relative;
@@ -176,7 +191,7 @@
   /* background: grey; */
   border: 1px solid #000;
 }
-.progressbar__percent:nth-of-type(1)   {
+.progressbar__percent {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -196,9 +211,108 @@
   border: 1px solid #000;
 }
 
-
 /* portfolio section */
-
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  border: 1px solid #000;
+  /* margin-bottom: var(--mb-1-5); */
+}
+.portfolio__content {
+  /* width: 70%; */
+  border: 1px solid #000;
+}
+.slider {
+  display: flex;
+  background: pink;
+}
+.slider__item {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+}
 /* about section */
+.about {
+  height: 70vh;
+  /* 50vh 주면 컨텐츠가 흘러 넘침 */
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: var(--mb-1-5); */
+}
+.about__title {
+  /* margin-bottom: var(--mb-1-5); */
+}
+.about__content {
+  /* width: 800px; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.about__content > div {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+.about__download {
+  position: absolute;
+  left: 0;
+  /* 수치 조정 */
+}
+.interview__accordian {
+  display: flex;
+  flex-direction: column;
+}
+.interview__question {
+  display: flex;
+  position: relative;
+  border: 1px solid red;
+}
+.interview__question .icon {
+  /* 셀렉터 명 i 바꾸고 조정 */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #000;
+}
+.interview__answer {
+
+}
 
 /* contact section */
+.contact {
+  display: flex;
+  height: 50vh;
+  border: 1px solid #000;
+  justify-content: center;
+}
+.contact > div {
+  background: pink;
+  position: relative;
+}
+.contact__title {
+}
+.contact__kakao {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact__email > form {
+  display: flex;
+  flex-direction: column;
+}
+.email__item {
+  display: block;
+}

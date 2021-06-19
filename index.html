@@ -3,15 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="./js/jquery-2.2.4.min.js"></script>
-<!-- multi slider js -->
-<script src="./js/multislider.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- css -->
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/responsive.css">
-<!-- Font Awesome -->
+<link rel="stylesheet" href="./css/slick.css">
+<!-- icon -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!-- js -->
+<script src="./js/jquery-2.2.4.min.js"></script>
+
+<!-- multi slider js -->
+<script src="./js/slick.min.js"></script>
+
+<!-- Font Awesome -->
 <script defer src="./js/script.js"></script>
+
 <title>LeeGangHee</title>
 </head>
 <body>
@@ -96,6 +105,7 @@
                 <div class="skills__wrap">
                     <div class="skills__title">
                         <h2>Skills</h2>
+                        <h3>my technical levels </h3>
                     </div>
                     <div class="skills__content">
 
@@ -103,112 +113,258 @@
 
                             <div class="skills__item">
                                 <div class="skills__progressbar">
-                                    html
-                                    <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="skills__dropdown">down</div>
-                            </div>
-                            <div class="skills__item">
-                                <div class="skills__progressbar">
-                                    html
                                     <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
-                                    </div>
-                                </div>
-                                <div class="skills__dropdown">down</div>
-                            </div>
-                            <div class="skills__item">
-                                <div class="skills__progressbar">
-                                    html
-                                    <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
+                                        <div class="progressbar__percent"></div>
                                     </div>
                                 </div>
                                 <div class="skills__dropdown">down</div>
                             </div>
 
+                            <div class="skills__item">
+                                <div class="skills__progressbar">
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
+                                    </div>
+                                    <div class="progressbar__full">
+                                        <div class="progressbar__percent"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__dropdown">down</div>
+                            </div>
+                            
+                            <div class="skills__item">
+                                <div class="skills__progressbar">
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
+                                    </div>
+                                    <div class="progressbar__full">
+                                        <div class="progressbar__percent"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__dropdown">down</div>
+                            </div>
+                            
                         </div>
 
                         <div>
 
                             <div class="skills__item">
                                 <div class="skills__progressbar">
-                                    html
-                                    <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
                                     </div>
-                                </div>
-                                <div class="skills__dropdown">down</div>
-                            </div>
-                            <div class="skills__item">
-                                <div class="skills__progressbar">
-                                    html
                                     <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
-                                    </div>
-                                </div>
-                                <div class="skills__dropdown">down</div>
-                            </div>
-                            <div class="skills__item">
-                                <div class="skills__progressbar">
-                                    html
-                                    <div class="progressbar__full">
-                                        <div class="progressbar__percent">90% &nbsp;</div>
+                                        <div class="progressbar__percent"></div>
                                     </div>
                                 </div>
                                 <div class="skills__dropdown">down</div>
                             </div>
 
+                            <div class="skills__item">
+                                <div class="skills__progressbar">
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
+                                    </div>
+                                    <div class="progressbar__full">
+                                        <div class="progressbar__percent"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__dropdown">down</div>
+                            </div>
+
+                            <div class="skills__item">
+                                <div class="skills__progressbar">
+                                    <div class="progressbar__desc">
+                                        <h4>
+                                            html
+                                        </h4>
+                                        <span>
+                                            90%
+                                        </span>
+                                    </div>
+                                    <div class="progressbar__full">
+                                        <div class="progressbar__percent"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__dropdown">down</div>
+                            </div>
+                            
                         </div>
 
-
+                    </div>
+                </div>                            
+            </section>
+            
+            <section class="portfolio">
+                <div class="portfolio__wrap">
+                    <div class="portfolio__title">
+                        <h2>portfolio works</h2>
+                    </div>
+                    <div class="portfolio__content">
+                        <!-- multi slider auto/ click event modal/ btn to new webpage -->
+                        <div class="slider">
+                            <div class="slider__item">
+                                1
+                            </div>
+                            <div class="slider__item">
+                                1
+                            </div>
+                            <div class="slider__item">
+                                1
+                            </div>
+                            <div class="slider__item">
+                                1
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
             
-            <section class="portfolio">
-                <!-- multi slider auto/ click event modal/ btn to new webpage -->
-                <div class="sliders">
-        
-                </div>
-            </section>
-            
             <section class="about">
-                <!-- accordian dropdown/ self interview -->
-                <div class="about__title">
-                    <h2>Self-interview</h2>
-                </div>
-                <div class="about_accordian">
-                    
+                <div class="about__wrap">
+                    <!-- accordian dropdown/ self interview -->
+                    <div class="about__title">
+                        <h2>about</h2>
+                    </div>
+                    <div class="about__content">
+                        <div>
+                            <div class="about__download">
+                                <button>이력서</button>
+                            </div>
+                            <div>
+                                <h3>self-interview</h3>
+                            </div>
+                        </div>
+                        <div class="interview__accordian">
+                            <div class="interview__question">
+                                <h3>Q1. 이전에는 무얼 하셨나요?</h3>
+                                <div class="icon"> > </div>
+                            </div>
+                            <div class="interview__answer">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                    Nobis unde nemo doloremque vel velit ab incidunt architecto <br>
+                                    eligendi, minus cum minima voluptas animi ipsam numquam aperiam <br>
+                                    quod deleniti laudantium sit.
+                                </p>
+                            </div>
+                            <div class="interview__question">
+                                <h3>Q1. 이전에는 무얼 하셨나요?</h3>
+                                <div class="icon"> > </div>
+                            </div>
+                            <div class="interview__answer">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                    Nobis unde nemo doloremque vel velit ab incidunt architecto <br>
+                                    eligendi, minus cum minima voluptas animi ipsam numquam aperiam <br>
+                                    quod deleniti laudantium sit.
+                                </p>
+                            </div>
+                            <div class="interview__question">
+                                <h3>Q1. 이전에는 무얼 하셨나요?</h3>
+                                <div class="icon"> > </div>
+                            </div>
+                            <div class="interview__answer">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                    Nobis unde nemo doloremque vel velit ab incidunt architecto <br>
+                                    eligendi, minus cum minima voluptas animi ipsam numquam aperiam <br>
+                                    quod deleniti laudantium sit.
+                                </p>
+                            </div>
+                            <div class="interview__question">
+                                <h3>Q1. 이전에는 무얼 하셨나요?</h3>
+                                <div class="icon"> > </div>
+                            </div>
+                            <div class="interview__answer">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                    Nobis unde nemo doloremque vel velit ab incidunt architecto <br>
+                                    eligendi, minus cum minima voluptas animi ipsam numquam aperiam <br>
+                                    quod deleniti laudantium sit.
+                                </p>
+                            </div>
+                            <div class="interview__question">
+                                <h3>Q1. 이전에는 무얼 하셨나요?</h3>
+                                <div class="icon"> > </div>
+                            </div>
+                            <div class="interview__answer">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                    Nobis unde nemo doloremque vel velit ab incidunt architecto <br>
+                                    eligendi, minus cum minima voluptas animi ipsam numquam aperiam <br>
+                                    quod deleniti laudantium sit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             
             <section class="contact">
                 <!-- input form/ txt, kakao QR code(modal?) e-mail send -->
-                <div class="contact__title">
-                    <h2>
-                        궁금한 게 있으시면<br>
-                        언제든 연락주세요!
-                    </h2>
-                </div>
-                <div class="contact__kakao">
-                    <div class="kakao__modal">
-                        QR code
+                <div>
+                    <div class="contact__title">
+                        <h2>
+                            궁금한 게 있으시면<br>
+                            언제든 연락주세요!
+                        </h2>
+                    </div>
+
+                    <div class="contact__kakao">
+                        <div class="kakao__modal">
+                            QR code
+                        </div>
                     </div>
                 </div>
+
                 <div class="contact__email">
                     <form action="" class="email">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <input type="submit" value="전송">
+                        <div class="email__item">
+                            <input type="text">
+                        </div>
+                        <div class="email__item">
+                            <input type="text">
+                        </div>
+                        <div class="email__item">
+                            <input type="text">
+                        </div>
+                        <div class="email__item">
+                            <input type="text">
+                        </div>
                     </form>
                 </div>
         
             </section>
-            
+
         </div>    
     </div>
 
