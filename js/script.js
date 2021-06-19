@@ -28,8 +28,11 @@
 // $(document).ready(function(){
     $(function(){
 
+      $('.test').slick({
+      })
+
       // 여기 할 거 집어넣으면 된다
-      $('.center').slick({
+     /*  $('.center').slick({
         // setting-name: setting-value
         // autoplay: true,
         infinite: true,
@@ -56,5 +59,5 @@
             }
           }
         ]
-      });
+      }); */
   });
