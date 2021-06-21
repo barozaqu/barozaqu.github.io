@@ -19,7 +19,7 @@
   top: 0;
   height: 100vh;
   min-width: 240px;
-  background: var(--primary-bgcolor);
+  background: var(--primary-color);
 }
 .main__container {
   padding-left: 240px;
@@ -73,7 +73,7 @@
   line-height: 3rem;
 }
 .menu__list:hover {
-  background: pink;
+  background: var(--primary-color-lighter);
 }
 
 .header__link {
@@ -186,7 +186,7 @@
 .skills__progressbar {
   flex: 8;
   /* background: pink; */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -201,8 +201,8 @@
   height: 1rem;
   width: 100%;
 
-  /* background: grey; */
-  border: 1px solid #000;
+  background: var(--primary-color-lighter);
+  /* border: 1px solid #000; */
 }
 .progressbar__percent {
   position: relative;
@@ -211,12 +211,12 @@
   width: 90%;
   height: 1.2rem;
 
-  background: black;
+  background: var(--primary-color);
   color: #fff;
   text-align: end;
   line-height: 1.1rem;
   border-radius: 0 0.5rem 0.5rem 0;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 .skills__dropdown {
   flex: 2;
@@ -322,7 +322,7 @@
 }
 
 .portfolio__wrap {
-  background: gold;
+  background: var(--primary-bgcolor);
   height: 1000px;
 }
 
