@@ -3,11 +3,11 @@
 :root {
   /* color setting */
   /* main color */
-  --hue-color: 45;
+  --hue-color: 38;
   /* basic theme */
-  --primary-color: hsl(var(--hue-color), 90%, 55%);
-  --primary-bgcolor: hsl(var(--hue-color), 84%, 62%);
-  --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --primary-color: hsl(var(--hue-color), 99%, 60%);
+  --primary-bgcolor: hsl(var(--hue-color), 99%, 95%);
+  --primary-color-lighter: hsl(var(--hue-color), 99%, 89%);
 
   --black-color: hsl(var(--hue-color), 8%, 15%);
   --gray-color: hsl(var(--hue-color), 8%, 45%);
