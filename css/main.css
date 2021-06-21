@@ -78,16 +78,16 @@
 
 .header__link {
   display: flex;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   justify-content: space-evenly;
 }
-.link__blog {
-  border: 1px solid #000;
+.link__blog > img {
+  /* border: 1px solid #000; */
   height: 4rem;
   width: 4rem;
 }
-.link__github {
-  border: 1px solid #000;
+.link__github > img {
+  /* border: 1px solid #000; */
   height: 4rem;
   width: 4rem;
 }
