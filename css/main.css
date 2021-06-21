@@ -129,7 +129,7 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: skyblue;
+  /* background: skyblue; */
   /* margin-bottom: var(--mb-1-5); */
 }
 .inrto__title {
@@ -268,7 +268,7 @@
 .interview__question {
   display: flex;
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .interview__question .icon {
   /* 셀렉터 명 i 바꾸고 조정 */
