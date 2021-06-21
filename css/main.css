@@ -34,21 +34,20 @@
   }
 }
 
-.header__logo {
+.header__logo > img {
   width: 50px;
   height: 50px;
-  background: #000;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 70%;
 }
 .header__nav {
   /* min-height: 500px; */
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -68,10 +67,13 @@
 .menu__content {
 }
 .menu__list {
-  background: pink;
+  /* background: pink; */
   border: 1px solid #000;
   height: 3rem;
   line-height: 3rem;
+}
+.menu__list:hover {
+  background: pink;
 }
 
 .header__link {
@@ -109,7 +111,6 @@
   position: relative;
   left: 0;
 } */
-
 
 /* scroll-up btn */
 .scrollup {
@@ -177,7 +178,7 @@
   width: 19rem;
   /* 마찬가지로 줄이면 컨텐츠 좌측 aside로 넘어감 */
   height: 4rem;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
   /* background: #000; */
   border: 1px solid #000;
 }
@@ -193,13 +194,13 @@
 .progressbar__desc {
   display: flex;
   justify-content: space-between;
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
 }
 .progressbar__full {
   position: relative;
   height: 1rem;
   width: 100%;
-  
+
   /* background: grey; */
   border: 1px solid #000;
 }
@@ -209,12 +210,12 @@
   transform: translateY(-50%);
   width: 90%;
   height: 1.2rem;
-  
+
   background: black;
   color: #fff;
   text-align: end;
   line-height: 1.1rem;
-  border-radius: 0 .5rem .5rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
   border: 1px solid #000;
 }
 .skills__dropdown {
@@ -229,14 +230,10 @@
   flex-direction: column;
   height: 50vh;
   border: 1px solid #000; */
-  /* margin-bottom: var(--mb-1-5); */
-
-
-
+/* margin-bottom: var(--mb-1-5); */
 
 /* about section */
 .about {
-  height: 70vh;
   /* 50vh 주면 컨텐츠가 흘러 넘침 */
   display: flex;
   justify-content: center;
@@ -247,9 +244,9 @@
 }
 .about__content {
   /* width: 800px; */
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-content: center; */
 }
 .about__content > div {
   position: relative;
@@ -263,9 +260,10 @@
   left: 0;
   /* 수치 조정 */
 }
-.interview__accordian {
+.interview__item {
   display: flex;
   flex-direction: column;
+  width: 24rem;
 }
 .interview__question {
   display: flex;
@@ -281,7 +279,11 @@
   border: 1px solid #000;
 }
 .interview__answer {
-
+}
+@media (max-width: 500px) {
+  .about {
+    /* justify-content: space-between; */
+  }
 }
 
 /* contact section */
@@ -323,7 +325,6 @@
   background: gold;
   height: 1000px;
 }
-
 
 .test {
   /* width: 100%; */

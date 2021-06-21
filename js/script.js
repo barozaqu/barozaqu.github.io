@@ -30,7 +30,6 @@
 
       $('.test').slick({
       })
-
       // 여기 할 거 집어넣으면 된다
      /*  $('.center').slick({
         // setting-name: setting-value
