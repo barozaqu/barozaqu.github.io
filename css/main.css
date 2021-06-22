@@ -128,22 +128,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 50vh;
   /* background: skyblue; */
   /* margin-bottom: var(--mb-1-5); */
 }
-.inrto__title {
-  margin-top: 5rem;
-  width: 70%;
-  height: 30%;
-  border: 1px solid #000;
-}
-.inrto__title > h1 {
-  /* margin-bottom: var(--mb-0-5); */
-}
 .intro__sub {
   width: 70%;
-  height: 40%;
   border: 1px solid #000;
 }
 
@@ -160,7 +151,6 @@
 }
 .title__wrap {
   display: flex;
-  justify-content: flex-start;
   margin-left: -1rem;
   margin-bottom: var(--mb-2-5);
   /* border: 1px solid #000; */
@@ -235,16 +225,18 @@
   margin-bottom: var(--mb-0-5);
 }
 .dropdown__arrow {
-  flex: 1;
-  position: relative;
-  align-self: flex-start;
-  top: 1.3rem;
   display: flex;
   justify-content: center;
 }
 .arrow__down {
   width: 1.4rem;
   height: 1.2rem;
+}
+.skills__arrow {
+  flex: 1;
+  top: 1.3rem;
+  position: relative;
+  align-self: flex-start;
 }
 /* portfolio section */
 /* .portfolio {
@@ -280,7 +272,7 @@
 /* .about__content > div, */
 .interview__item--wrap {
   border: 1px solid var(--gray-color);
-  padding: 2rem;
+  padding: 2rem 3rem 2rem 2rem;
 }
 
 .interview__item {
@@ -303,18 +295,16 @@
 .interview__question {
   display: flex;
   position: relative;
+  padding-left: 1rem;
   background: var(--primary-color);
-  border-radius: 0.5rem;
   margin-bottom: var(--mb-0-5);
 }
-.interview__question > .dropdown__arrow {
-  /* 셀렉터 명 i 바꾸고 조정 */
+.interview__arrow {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translate(100%, -50%);
-}
-.interview__answer {
+  margin-right: -0.5rem;
 }
 @media (max-width: 500px) {
   .about {
