@@ -9,8 +9,8 @@
   --primary-bgcolor: hsl(var(--hue-color), 99%, 98%);
   --primary-color-lighter: hsl(var(--hue-color), 99%, 89%);
 
-  --black-color: hsl(var(--hue-color), 8%, 15%);
-  --gray-color: hsl(var(--hue-color), 8%, 45%);
+  --black-color: hsl(var(--hue-color), 5%, 15%);
+  --gray-color: hsl(var(--hue-color), 9%, 40%);
   --white-color: #fff;
 
   --body-color: hsl(var(--hue-color), 60%, 99%);
