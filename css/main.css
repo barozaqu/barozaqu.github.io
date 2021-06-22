@@ -149,24 +149,38 @@
 
 /* skills section */
 .skills {
-  /* background: green; */
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 50vh;
+  margin-bottom: var(--mb-3);
 }
 .skills__wrap {
   /* width: 70%; */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
+.title__wrap {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -1rem;
+  margin-bottom: var(--mb-2-5);
+  /* border: 1px solid #000; */
+  /* border: 1px solid #000; */
+}
+
 .skills__title {
-  margin-bottom: var(--mb-0-5);
+  /* position: relative; */
+}
+.title__bar {
+  height: 3.2rem;
+  width: 0.5rem;
+  margin-right: 0.5rem;
+  align-self: center;
+  background: gold;
 }
 .skills__content {
   display: flex;
-  /* background: green; */
   /* flex-direction: column; */
-  /* border: 1px solid #000; */
+  border: 1px solid var(--gray-color);
 }
 .skills__content > div {
   display: flex;
@@ -177,10 +191,8 @@
   display: flex;
   width: 19rem;
   /* 마찬가지로 줄이면 컨텐츠 좌측 aside로 넘어감 */
-  height: 4rem;
-  margin: 0.5rem 1rem;
-  /* background: #000; */
-  border: 1px solid #000;
+  /* height: 4rem; */
+  margin: 1rem 1rem;
 }
 
 .skills__progressbar {
@@ -198,11 +210,10 @@
 }
 .progressbar__full {
   position: relative;
-  height: 1rem;
+  height: 1.2rem;
   width: 100%;
-
   background: var(--primary-color-lighter);
-  /* border: 1px solid #000; */
+  margin-bottom: var(--mb-0-5);
 }
 .progressbar__percent {
   position: relative;
@@ -210,7 +221,6 @@
   transform: translateY(-50%);
   width: 90%;
   height: 1.2rem;
-
   background: var(--primary-color);
   color: #fff;
   text-align: end;
@@ -218,12 +228,24 @@
   border-radius: 0 0.5rem 0.5rem 0;
   /* border: 1px solid #000; */
 }
-.skills__dropdown {
-  flex: 2;
-  width: 1rem;
-  border: 1px solid #000;
+.skills__think {
+  background: var(--primary-bgcolor);
+  font-size: 0.9rem;
+  padding: 5%;
+  margin-bottom: var(--mb-0-5);
 }
-
+.dropdown__arrow {
+  flex: 1;
+  position: relative;
+  align-self: flex-start;
+  top: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+.arrow__down {
+  width: 1.4rem;
+  height: 1.2rem;
+}
 /* portfolio section */
 /* .portfolio {
   display: flex;
@@ -243,17 +265,30 @@
   /* margin-bottom: var(--mb-1-5); */
 }
 .about__content {
-  /* width: 800px; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-content: center; */
+  display: flex;
+  /* border: 1px solid #000; */
+  text-align: center;
 }
-.about__content > div {
+.resume__myself > img {
+  width: 160px;
+  margin-bottom: var(--mb-0-25);
+}
+.resume__wrap {
+  margin-right: 2rem;
+}
+
+/* .about__content > div, */
+.interview__item--wrap {
+  border: 1px solid var(--gray-color);
+  padding: 2rem;
+}
+
+.interview__item {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  border: 1px solid #000;
 }
 .about__download {
   position: absolute;
@@ -268,15 +303,16 @@
 .interview__question {
   display: flex;
   position: relative;
-  /* border: 1px solid red; */
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+  margin-bottom: var(--mb-0-5);
 }
-.interview__question .icon {
+.interview__question > .dropdown__arrow {
   /* 셀렉터 명 i 바꾸고 조정 */
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
-  border: 1px solid #000;
+  transform: translate(100%, -50%);
 }
 .interview__answer {
 }
@@ -323,12 +359,11 @@
 
 .portfolio__wrap {
   background: var(--primary-bgcolor);
-  height: 1000px;
 }
 
 .test {
   /* width: 100%; */
   border: 3px solid red;
-  width: 660px;
+  width: 300px;
   margin: 0 auto;
 }
