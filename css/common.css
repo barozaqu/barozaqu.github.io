@@ -7,7 +7,7 @@
   /* basic theme */
   --primary-color: hsl(var(--hue-color), 99%, 60%);
   --primary-bgcolor: hsl(var(--hue-color), 99%, 98%);
-  --primary-color-lighter: hsl(var(--hue-color), 99%, 89%);
+  --primary-bgcolor-lighter: hsl(var(--hue-color), 99%, 89%);
 
   --black-color: hsl(var(--hue-color), 5%, 15%);
   --gray-color: hsl(var(--hue-color), 9%, 40%);

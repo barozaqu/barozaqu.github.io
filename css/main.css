@@ -73,7 +73,7 @@
   line-height: 3rem;
 }
 .menu__list:hover {
-  background: var(--primary-color-lighter);
+  background: var(--primary-bgcolor-lighter);
 }
 
 .header__link {
@@ -186,7 +186,7 @@
   position: relative;
   height: 1.2rem;
   width: 100%;
-  background: var(--primary-color-lighter);
+  background: var(--primary-bgcolor-lighter);
   margin-bottom: var(--mb-0-5);
 }
 .progressbar__percent {
@@ -242,6 +242,7 @@
   border: 1px solid #000;
 }
 .about__title {
+  /* position: ; */
   /* margin-bottom: var(--mb-1-5); */
 }
 .about__content {
@@ -303,18 +304,24 @@
 
 /* contact section */
 .contact {
-  position: relative;
   display: flex;
-  height: 50vh;
   justify-content: center;
+  position: relative;
+  height: 50vh;
+  border: 1px solid #000;
 }
 .contact__title {
 }
+.contact__desc {
+  border: 1px solid #000;
+  align-self: center;
+}
 .contact__desc > h4 {
   margin-bottom: var(--mb-1-5);
+  border: 1px solid #000;
 }
-
 .contact__kakao {
+  border: 1px solid #000;
   position: absolute;
   top: 60%;
   left: 50%;
@@ -357,17 +364,24 @@
 
 .scrollup {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   right: 3%;
   bottom: 1rem;
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
   background-color: var(--primary-color);
   opacity: 0.8;
-  padding: 0 0.3rem;
-  border-radius: 0.4rem;
-  z-index: var(--z-tooltip);
+  /* z-index: var(--z-tooltip); */
   transition: 0.4s;
   visibility: hidden;
+}
+.scrollup > i {
+  margin-left: 1px;
+  margin-bottom: 6px;
+  font-size: 4rem;
 }
 .scrollup.visible {
   bottom: 4rem;
