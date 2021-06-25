@@ -5,8 +5,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 .wrap {
-  display: flex;
-  position: relative;
 }
 /* .aside {
 } */
@@ -25,7 +23,7 @@
 }
 .main__container {
   padding-left: 240px;
-  /* 다른 방법 강구 */
+  /* 다른 방법? */
 }
 @media (max-width: 500px) {
   .aside {
@@ -70,7 +68,7 @@
 }
 .menu__list {
   /* background: pink; */
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 3rem;
   line-height: 3rem;
 }
@@ -96,16 +94,14 @@
 .footer__content {
   display: flex;
   flex-direction: column;
-  height: 5rem;
   justify-content: center;
-  border: 1px solid #000;
 }
-.footer__info {
+.footer__mymail {
+  margin-bottom: var(--mb-1);
 }
-.footer__info > p {
-  margin: 5px 0;
+.footer__copyright {
+  font-size: 12px;
 }
-
 /* section start */
 
 /* 반응형 */
@@ -130,40 +126,31 @@
   /* margin-bottom: var(--mb-1-5); */
 }
 .intro__sub {
-  width: 70%;
+}
+.intro__sub p {
+  padding: 10px;
   border: 1px solid #000;
 }
 
 /* skills section */
 .skills {
+  border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-content: center;
   margin-bottom: var(--mb-3);
   height: 50vh;
+  position: relative;
 }
 .skills__wrap {
-  /* width: 70%; */
-  /* border: 1px solid #000; */
-}
-.title__wrap {
-  display: flex;
-  margin-left: -1rem;
-  margin-bottom: var(--mb-2-5);
-  /* border: 1px solid #000; */
-  /* border: 1px solid #000; */
+  align-self: center;
+  border: 1px solid #000;
 }
 
 .skills__title {
   /* position: relative; */
 }
-.title__bar {
-  height: 3.2rem;
-  width: 0.5rem;
-  margin-right: 0.5rem;
-  align-self: center;
-  background: gold;
-}
+
 .skills__content {
   display: flex;
   /* flex-direction: column; */
@@ -206,7 +193,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 90%;
+  width: 80%;
   height: 1.2rem;
   background: var(--primary-color);
   color: #fff;
@@ -247,16 +234,20 @@
 .about {
   /* 50vh 주면 컨텐츠가 흘러 넘침 */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: var(--mb-3);
   height: 50vh;
+  position: relative;
+  border: 1px solid #000;
 }
 .about__title {
   /* margin-bottom: var(--mb-1-5); */
 }
 .about__content {
+  border: 1px solid #000;
   display: flex;
-  /* border: 1px solid #000; */
+  justify-content: center;
   text-align: center;
 }
 .resume__myself > img {
@@ -312,12 +303,10 @@
 
 /* contact section */
 .contact {
+  position: relative;
   display: flex;
   height: 50vh;
   justify-content: center;
-}
-.contact > div {
-  position: relative;
 }
 .contact__title {
 }
@@ -354,6 +343,7 @@
   background: var(--primary-bgcolor);
   margin-bottom: var(--mb-3);
   height: 50vh;
+  position: relative;
 }
 
 .test {
