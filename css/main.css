@@ -6,95 +6,99 @@
 
 .wrap {
 }
-/* .aside {
-} */
+/* aside bar */
 .aside {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* display: none; */
-  z-index: 10;
-  position: fixed;
-  left: 0;
-  top: 0;
+  z-index: 100;
   height: 100vh;
-  min-width: 240px;
+  width: 200px;
   background: var(--primary-color);
 }
-.main__container {
-  padding-left: 240px;
-  /* 다른 방법? */
+.main__wrap {
+  padding-left: 200px;
 }
-@media (max-width: 500px) {
-  .aside {
+/* 반응형 */
+/* @media (max-width: 500px) { */
+/* .aside {
     display: none;
-  }
-  .main__container {
-    padding-left: 0;
-  }
+  } */
+.main__container {
+  padding-left: 200px;
 }
-
-.header__logo > img {
-  width: 50px;
-  height: 50px;
-}
-
+/* 반응형 on aside -> header로 */
 .header {
-  display: flex;
-  justify-content: center;
+  /* width: 100%; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
   /* border: 1px solid #000; */
-  height: 70%;
+  /* height: 70%; */
+  /* border: 1px solid #000; */
 }
-.header__nav {
-  /* min-height: 500px; */
-  /* border: 3px solid red; */
+.header__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
-.header__logo--wrap {
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: center;
+.logo__container {
+  align-self: center;
+  margin-bottom: var(--mb-3);
 }
-.header__logo {
+.header__logo > a > img {
+  width: 50px;
+  height: 50px;
 }
-.header__theme {
-}
-.theme__dark {
-}
-.menu__content {
-}
-.menu__list {
-  /* background: pink; */
+.darkmode {
   /* border: 1px solid #000; */
-  height: 3rem;
-  line-height: 3rem;
+  margin-bottom: var(--mb-3);
 }
-.menu__list:hover {
+.darkmode i {
+  font-size: var(--font-icon-theme);
+}
+
+/* 다크모드 클릭 이벤트 */
+.dark__theme {
+  /* color: var(--primary-bgcolor); */
+}
+.basic__theme {
+  color: var(--primary-bgcolor);
+  display: none;
+}
+/* 클릭 이벤트 끝 */
+
+.header__gnb {
+}
+.gnb__list {
+  /* border: 1px solid #000; */
+  padding: var(--pd-0-75);
+}
+.header__gnb > a:last-child {
+  margin-bottom: var(--mb-3);
+}
+.gnb__list:hover {
   background: var(--primary-bgcolor-lighter);
 }
 
 .header__link {
   display: flex;
-  /* border: 1px solid #000; */
   justify-content: space-evenly;
+  margin-bottom: var(--mb-1-5);
 }
-.link__blog > img {
-  /* border: 1px solid #000; */
-  height: 4rem;
-  width: 4rem;
-}
-.link__github > img {
-  /* border: 1px solid #000; */
-  height: 4rem;
-  width: 4rem;
+.header__link img {
+  height: 3rem;
+  width: 3rem;
 }
 .footer__content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  /* border: 1px solid #000; */
 }
 .footer__mymail {
   margin-bottom: var(--mb-1);
@@ -109,257 +113,6 @@
   position: relative;
   left: 0;
 } */
-
-.sub__title {
-  color: var(--gray-color);
-}
-
-/* intro section */
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 50vh;
-  /* background: skyblue; */
-  /* margin-bottom: var(--mb-1-5); */
-}
-.intro__sub {
-}
-.intro__sub p {
-  padding: 10px;
-  border: 1px solid #000;
-}
-
-/* skills section */
-.skills {
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: var(--mb-3);
-  height: 50vh;
-  position: relative;
-}
-.skills__wrap {
-  align-self: center;
-  border: 1px solid #000;
-}
-
-.skills__title {
-  /* position: relative; */
-}
-
-.skills__content {
-  display: flex;
-  /* flex-direction: column; */
-  border: 1px solid var(--gray-color);
-}
-.skills__content > div {
-  display: flex;
-  flex-direction: column;
-  /* width: 50%; */
-}
-.skills__item {
-  display: flex;
-  width: 19rem;
-  /* 마찬가지로 줄이면 컨텐츠 좌측 aside로 넘어감 */
-  /* height: 4rem; */
-  margin: 1rem 1rem;
-}
-
-.skills__progressbar {
-  flex: 8;
-  /* background: pink; */
-  /* border: 1px solid #000; */
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-}
-.progressbar__desc {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 0.3rem;
-}
-.progressbar__full {
-  position: relative;
-  height: 1.2rem;
-  width: 100%;
-  background: var(--primary-bgcolor-lighter);
-  margin-bottom: var(--mb-0-5);
-}
-.progressbar__percent {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80%;
-  height: 1.2rem;
-  background: var(--primary-color);
-  color: #fff;
-  text-align: end;
-  line-height: 1.1rem;
-  border-radius: 0 0.5rem 0.5rem 0;
-  /* border: 1px solid #000; */
-}
-.skills__think {
-  background: var(--primary-bgcolor);
-  font-size: 0.9rem;
-  padding: 5%;
-  margin-bottom: var(--mb-0-5);
-}
-.dropdown__arrow {
-  display: flex;
-  justify-content: center;
-}
-.arrow__down {
-  width: 1.4rem;
-  height: 1.2rem;
-}
-.skills__arrow {
-  flex: 1;
-  top: 1.3rem;
-  position: relative;
-  align-self: flex-start;
-}
-/* portfolio section */
-/* .portfolio {
-  display: flex;
-  flex-direction: column;
-  height: 50vh;
-  border: 1px solid #000; */
-/* margin-bottom: var(--mb-1-5); */
-
-/* about section */
-.about {
-  /* 50vh 주면 컨텐츠가 흘러 넘침 */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: var(--mb-3);
-  height: 50vh;
-  position: relative;
-  border: 1px solid #000;
-}
-.about__title {
-  /* position: ; */
-  /* margin-bottom: var(--mb-1-5); */
-}
-.about__content {
-  border: 1px solid #000;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.resume__myself > img {
-  width: 160px;
-  margin-bottom: var(--mb-0-25);
-}
-.resume__wrap {
-  margin-right: 2rem;
-}
-
-/* .about__content > div, */
-.interview__item--wrap {
-  border: 1px solid var(--gray-color);
-  padding: 2rem 3rem 2rem 2rem;
-}
-
-.interview__item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-.about__download {
-  position: absolute;
-  left: 0;
-  /* 수치 조정 */
-}
-.interview__item {
-  display: flex;
-  flex-direction: column;
-  width: 24rem;
-}
-.interview__question {
-  display: flex;
-  position: relative;
-  padding-left: 1rem;
-  background: var(--primary-color);
-  margin-bottom: var(--mb-0-5);
-}
-.interview__arrow {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(100%, -50%);
-  margin-right: -0.5rem;
-}
-@media (max-width: 500px) {
-  .about {
-    justify-content: space-between;
-  }
-}
-
-/* contact section */
-.contact {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 50vh;
-  border: 1px solid #000;
-}
-.contact__title {
-}
-.contact__desc {
-  border: 1px solid #000;
-  align-self: center;
-}
-.contact__desc > h4 {
-  margin-bottom: var(--mb-1-5);
-  border: 1px solid #000;
-}
-.contact__kakao {
-  border: 1px solid #000;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.kakao__modal {
-}
-.kakao__modal > img {
-  width: 7rem;
-  height: 7rem;
-}
-.contact__email {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact__email > form {
-  display: flex;
-  flex-direction: column;
-}
-.email__item {
-  display: block;
-}
-
-.portfolio__wrap {
-  background: var(--primary-bgcolor);
-  margin-bottom: var(--mb-3);
-  height: 50vh;
-  position: relative;
-}
-
-.test {
-  /* width: 100%; */
-  border: 3px solid red;
-  width: 300px;
-  margin: 0 auto;
-}
-
 /* scroll up btn */
 
 .scrollup {
