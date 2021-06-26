@@ -20,17 +20,12 @@
   width: 200px;
   background: var(--primary-color);
 }
-.main__wrap {
-  padding-left: 200px;
-}
 /* 반응형 */
 /* @media (max-width: 500px) { */
 /* .aside {
     display: none;
   } */
-.main__container {
-  padding-left: 200px;
-}
+
 /* 반응형 on aside -> header로 */
 .header {
   /* width: 100%; */
@@ -106,14 +101,77 @@
 .footer__copyright {
   font-size: 12px;
 }
-/* section start */
-
 /* 반응형 */
 /* .main__container {
   position: relative;
   left: 0;
 } */
 /* scroll up btn */
+
+/* section start */
+.main__container {
+  padding-left: 200px;
+  /* background: var(--white-color); */
+  /* z-index: -1; */
+}
+.intro {
+  background: url(../img/intro/work-731198_1920.jpg) rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  z-index: -20;
+}
+.intro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.7);
+}
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: var(--mb-3);
+}
+.intro__title h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+.intro__title h1 {
+  font-size: 6rem;
+}
+.intro__sub {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+.intro__sub > span {
+  margin-bottom: var(--mb-0-5);
+}
+/* about seciton start */
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
 
 .scrollup {
   position: fixed;
