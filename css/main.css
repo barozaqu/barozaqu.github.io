@@ -28,6 +28,16 @@
 
 /* 반응형 on aside -> header로 */
 .header {
+<<<<<<< HEAD
+=======
+  /* width: 100%; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* border: 1px solid #000; */
+  /* height: 70%; */
+  /* border: 1px solid #000; */
+>>>>>>> 44a6f909ad27ecf7cae7f8f1ed14e79d7785eb70
 }
 .header__container {
   display: flex;
@@ -46,6 +56,7 @@
 .darkmode {
   /* border: 1px solid #000; */
   margin-bottom: var(--mb-3);
+<<<<<<< HEAD
 }
 .darkmode i {
   font-size: var(--icon-theme);
@@ -70,6 +81,32 @@
 .header__gnb > a:last-child {
   margin-bottom: var(--mb-3);
 }
+=======
+}
+.darkmode i {
+  font-size: var(--font-icon-theme);
+}
+
+/* 다크모드 클릭 이벤트 */
+.dark__theme {
+  /* color: var(--primary-bgcolor); */
+}
+.basic__theme {
+  color: var(--primary-bgcolor);
+  display: none;
+}
+/* 클릭 이벤트 끝 */
+
+.header__gnb {
+}
+.gnb__list {
+  /* border: 1px solid #000; */
+  padding: var(--pd-0-75);
+}
+.header__gnb > a:last-child {
+  margin-bottom: var(--mb-3);
+}
+>>>>>>> 44a6f909ad27ecf7cae7f8f1ed14e79d7785eb70
 .gnb__list:hover {
   background: var(--primary-bgcolor-lighter);
 }
@@ -113,6 +150,7 @@
   overflow: hidden;
   height: 100%;
   z-index: -20;
+<<<<<<< HEAD
 }
 .intro::before {
   content: "";
@@ -629,6 +667,60 @@
 
 
 
+=======
+}
+.intro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.7);
+}
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--white-color);
+}
+.intro__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: var(--mb-3);
+}
+.intro__title h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+.intro__title h1 {
+  font-size: 6rem;
+}
+.intro__sub {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+.intro__sub > span {
+  margin-bottom: var(--mb-0-5);
+}
+/* about seciton start */
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+>>>>>>> 44a6f909ad27ecf7cae7f8f1ed14e79d7785eb70
 
 .scrollup {
   position: fixed;

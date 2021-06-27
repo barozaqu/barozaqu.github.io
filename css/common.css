@@ -37,6 +37,9 @@
   --icon-theme: 2rem;
   --icon-title: 2.5rem;
 
+  /* ----------------------- icon-fontsize ----------------------- */
+  --font-icon-theme: 2rem;
+
   /* ----------------------- font-weight ----------------------- */
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -65,10 +68,25 @@
   --pd-3-5: 3.5rem;
   --pd-5: 5rem;
 
+  /* ----------------------- padding ----------------------- */
+  --pd-0-25: 0.25rem;
+  --pd-0-5: 0.5rem;
+  --pd-0-75: 0.75rem;
+  --pd-1: 1rem;
+  --pd-1-5: 1.5rem;
+  --pd-2: 2rem;
+  --pd-2-5: 2.5rem;
+  --pd-3: 3rem;
+
   /* ----------------------- z index ----------------------- */
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+/* ----------------------- flex ----------------------- */
+.flex {
+  display: flex;
 }
 
 /* ----------------------- dark-theme ----------------------- */
@@ -86,14 +104,19 @@ body.d {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 /* ----------------------- seciton title ----------------------- */
 .section__title {
   align-self: center;
+=======
+.title__container {
+>>>>>>> 44a6f909ad27ecf7cae7f8f1ed14e79d7785eb70
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: var(--mb-5);
 }
+<<<<<<< HEAD
 .main__title {
   font-size: var(--sec-main-size);
 }
@@ -111,3 +134,5 @@ body.d {
   padding: 1rem;
   border-radius: 0.5rem;
 }
+=======
+>>>>>>> 44a6f909ad27ecf7cae7f8f1ed14e79d7785eb70
