@@ -6,27 +6,41 @@
   --hue-color: 38;
   /* basic theme */
   --primary-color: hsl(var(--hue-color), 99%, 60%);
+  --hover-color: hsl(var(--hue-color), 99%, 70%);
   --primary-bgcolor: hsl(var(--hue-color), 99%, 98%);
   --primary-bgcolor-lighter: hsl(var(--hue-color), 99%, 89%);
 
   --black-color: hsl(var(--hue-color), 5%, 15%);
   --gray-color: hsl(var(--hue-color), 9%, 40%);
   --white-color: #fff;
+  --grey-color: #989898;
 
   --body-color: hsl(var(--hue-color), 60%, 99%);
 
   /* font setting */
   /* --body-font: "Poppins", sans-serif; */
-  --big-font-size: 3rem;
+
+  /* section title */
+  --sec-main-size: 4rem;
+  --sec-sub-size: 1.5rem;
+
+  /* basic */
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
+  --big-font-size: 3rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.813rem;
+  --copyright-size: 0.8rem;
+
+  /* ----------------------- icon-fontsize ----------------------- */
+  --icon-theme: 2rem;
+  --icon-title: 2.5rem;
 
   /* ----------------------- font-weight ----------------------- */
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font--bold: 700;
 
   /* ----------------------- margin bottom ----------------------- */
   --mb-0-25: 0.25rem;
@@ -37,6 +51,19 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
+  --mb-5: 5rem;
+
+  /* ----------------------- padding ----------------------- */
+  --pd-0-25: 0.25rem;
+  --pd-0-5: 0.5rem;
+  --pd-0-75: 0.75rem;
+  --pd-1: 1rem;
+  --pd-1-5: 1.5rem;
+  --pd-2: 2rem;
+  --pd-2-5: 2.5rem;
+  --pd-3: 3rem;
+  --pd-3-5: 3.5rem;
+  --pd-5: 5rem;
 
   /* ----------------------- z index ----------------------- */
   --z-tooltip: 10;
@@ -45,28 +72,42 @@
 }
 
 /* ----------------------- dark-theme ----------------------- */
-body.dark-theme {
+body.d {
   --black-color: hsl(var(--hue-color), 8%, 95%); /* 흰색으로 바뀝니다 */
   --body-color: hsl(var(--hue-color), 28%, 12%); /* 어두운 색으로 바뀝니다 */
 }
 
+.section {
+  height: 100vh;
+}
 .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title__wrap {
-  display: flex;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  margin-left: -1rem;
-  margin-bottom: var(--mb-2-5);
-  /* border: 1px solid #000; */
-  /* border: 1px solid #000; */
-}
-.title__bar {
-  height: 3.2rem;
-  width: 0.5rem;
-  margin-right: 0.5rem;
+/* ----------------------- seciton title ----------------------- */
+.section__title {
   align-self: center;
-  background: gold;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: var(--mb-5);
+}
+.main__title {
+  font-size: var(--sec-main-size);
+}
+.sub__title {
+  font-size: var(--sec-sub-size);
+  color: var(--primary-color);
+}
+
+/* ----------------------- button ----------------------- */
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
