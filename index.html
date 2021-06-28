@@ -6,6 +6,7 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/plugin/fullpage.min.css">
     <link rel="stylesheet" href="./css/plugin/slick.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -36,28 +37,24 @@
             </div>
             <div class="darkmode">
               <!-- 여기 클릭 이벤트 -->
-              <a class="dark__theme" href="#">
-                <i class="fas fa-moon"></i>
-              </a>
-              <a class="basic__theme" href="#">
-                <i class="fas fa-sun"></i>
-              </a>
+                <i id="btn__dark" class="fas fa-moon"></i>
+                <i id="btn__basic" class="fas fa-sun"></i>
             </div>
 
             <nav class="header__gnb">
-              <a href="#">
+              <a href="#intro">
                 <div class="gnb__list">intro</div>
               </a>
-              <a href="#">
+              <a href="#about">
                 <div class="gnb__list">about</div>
               </a>
-              <a href="#">
+              <a href="#skills">
                 <div class="gnb__list">skills</div>
               </a>
-              <a href="#">
+              <a href="#portfolio">
                 <div class="gnb__list">portfolio</div>
               </a>
-              <a href="#">
+              <a href="#contact">
                 <div class="gnb__list">contact</div>
               </a>
             </nav>
@@ -86,7 +83,7 @@
       <div class="main__container">
         <div class="section__wrap">
           <!-- intro section start -->
-          <section class="intro section">
+          <section id="intro" class="intro section">
             <div class="intro__inner">
               <div class="intro__title">
                 <div>
@@ -109,7 +106,7 @@
           <!-- intro section end -->
 
           <!-- about seciton start -->
-          <section class="about section">
+          <section id="about" class="about section">
             <div class="inner">
               <div class="section__container">
                 <div class="section__title">
@@ -187,7 +184,7 @@
           </section>
           <!-- about section end -->
           <!-- skills section start -->
-          <section class="skills section">
+          <section id="skills" class="skills section">
             <div class="inner">
               <div class="section__container">
                 <div class="section__title">
@@ -320,7 +317,7 @@
           <!-- skills section end -->
 
           <!-- portfolio section start -->
-          <section class="portfolio">
+          <section id="portfolio" class="portfolio">
             <div class="inner">
               <div class="portfolio__container">
                 <div class="section__title">
@@ -448,7 +445,7 @@
           <!-- portfolio section end -->
           <!-- contact section start -->
 
-          <section class="contact section">
+          <section id="contact" class="contact section">
             <div class="inner">
               <div class="contact__container">
                 <div class="section__title">
@@ -459,13 +456,13 @@
                   <div>
                     <div class="contact__kakao">
                       <div class="kakao__img">
-                        <img class="kakaotalk " src="./img/kakaotalk.png" alt="">
+                        <img class="kakaotalk " src="./img/kakaotalk.png" alt="카카오톡 오픈카톡 QR">
                       </div>
                       <div class="btn kakao__btn">크게 보기</div>
                     </div>
                     <div class="kakao__overlay">
                       <div class="kakao__modal">
-                        <img src="" alt="">
+                        <img src="./img/kakaotalk.png" alt="카카오톡 오픈카톡 QR 확대">
                       </div>
                     </div>
 
