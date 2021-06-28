@@ -7,7 +7,6 @@
   /* basic theme */
   --primary-color: hsl(var(--hue-color), 99%, 60%);
   --hover-color: hsl(var(--hue-color), 99%, 70%);
-  --primary-bgcolor: hsl(var(--hue-color), 99%, 98%);
   --primary-bgcolor-lighter: hsl(var(--hue-color), 99%, 89%);
 
   --black-color: hsl(var(--hue-color), 5%, 15%);
@@ -18,7 +17,7 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
 
   /* font setting */
-  /* --body-font: "Poppins", sans-serif; */
+  --body-font: "Noto Sans KR", sans-serif;
 
   /* section title */
   --sec-main-size: 4rem;
