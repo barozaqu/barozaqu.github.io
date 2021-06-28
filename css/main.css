@@ -397,6 +397,7 @@
 .slider__img {
   flex: 1;
   padding: var(--mb-0-5);
+  overflow: hidden;
 }
 .slider__img img {
   border-radius: .5rem;
