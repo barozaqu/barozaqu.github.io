@@ -1,1 +1,239 @@
 @charset "utf-8";
+
+/* ========================= Tablet ========================= */
+@media (max-width: 768px){
+
+    /*
+        글로벌 변수를 통해 폰트 사이즈를 한번에 반응형에 적용하게 됩니다
+    */
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --big-font-size: 2rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .75rem;
+    }
+    .inner {
+        padding: 2rem 2rem;
+    }
+    .aside {
+        width: 0;
+    }
+    .main__container {
+        padding-left: 0px;
+    }
+    .header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        padding: 2%;
+        background-color: var(--primary-color);
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        z-index: var(--z-fixed);
+    }
+    .header__container {
+        display: flex;
+        flex-direction: row;
+    }
+    .logo__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .darkmode {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        transform: translate(50%, -50%);
+    }
+    .header__gnb {
+        display: none;
+        font-weight: var(--font--bold);
+    }
+    .gnb__list {
+        /* border: 1px solid #000; */
+        padding: var(--pd-0-75);
+    }
+    .header__gnb > a:last-child {
+        margin-bottom: var(--mb-3);
+    }
+    .gnb__list:hover {
+        background: var(--body-color);
+    }
+    .header__link {
+        display: none;
+    }
+    .header__link img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .footer__content {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid #000; */
+    }
+    .footer__mymail {
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb-1);
+    }
+    .footer__copyright {
+        font-size: var(--copyright-size);
+    }
+    .footer__content {
+        display: none;
+    }
+
+
+
+    /* about section */
+    .about {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .section__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .about__content {
+        display: flex;
+        flex-direction: column;
+        justify-self: space-evenly;
+      }
+      .about__item {
+          display: flex;
+          justify-content: center;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        .about__item:nth-child(1) {
+            align-self: center;
+        }
+        .about__item:nth-child(2) {
+            margin-top: 2rem;
+            margin-bottom: -1rem;
+        }
+      .about__item--desc {
+          margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: var(--grey-color);
+        line-height: 2rem;
+      }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= Mobile ========================= */
+@media (max-width: 568px){
+    #home {
+        flex-direction: column;
+    }
+    .home__img {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    .about__desc {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__img {
+        width: 80%;
+    }
+    .about__info--wrap {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .about__info--para {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    /* ====================== Skills ===================== */
+    .skills__list {
+        flex-direction: column;
+    }
+    .skills__item {
+        width: auto;
+    }
+
+    /* ==================== Qualification =============== */
+    .qualification__item {
+        width: 80%;
+    }
+
+    /* ==================== Services =================== */
+    .service__content {
+        flex-wrap: wrap;
+    }
+    .service__item {
+        margin-right: 2%;
+        width: 49%;
+        flex: auto;
+    }
+    .service__item:nth-child(1) {
+        width: 49%;
+    }
+    .service__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    /* =================== Portfolio ================== */
+    .slider__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slick__button {
+        align-self: center;
+    }
+
+    /* ===================== Footer =================== */
+    .footer {
+        padding-top: 0;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__links {
+        margin: var(--mb-1) 0;
+    }
+    .footer__link {
+        display: block;
+        margin: var(--mb-1) 0;
+        text-align: left;
+    }
+
+}
+

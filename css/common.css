@@ -76,14 +76,16 @@
   local('Noto Sans'),
   url('./font/Noto_Sans_KR/NotoSansKR-Regular.otf') format('truetype');
 }
-.body {
+body {
   font-family: 'Noto Sans Kr', sans-serif;
 }
-
-
 body {
   background: var(--body-color);
   color: var(--black-color);
+}
+
+.inner {
+  min-width: 340px;
 }
 /* ----------------------- dark-theme ----------------------- */
 body.dark-theme {
