@@ -408,6 +408,7 @@
   margin-bottom: var(--mb-0-5);
 }
 .slider__desc p {
+  color: var(--grey-color);
   margin-bottom: var(--mb-1-5);
 }
 .slider__buttons {
