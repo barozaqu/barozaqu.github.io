@@ -510,6 +510,9 @@
   width: 100%;
   height: 300px;
 }
+.modal__img {
+  cursor: pointer;
+}
 .portfolio__overlay {
   position: fixed;
   top: 0;
@@ -532,9 +535,6 @@
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: var(--z-modal);
-}
-.modal__img {
-  cursor: pointer;
 }
 /* contact */
 .contact {
