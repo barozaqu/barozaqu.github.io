@@ -147,9 +147,11 @@
     flex-direction: column;
   }
   .slick-dots li {
-    margin-right: 0
-    ;
-  }
+      margin-right: 5px;
+    }
+    .slick-dots li:last-child {
+        margin-right: 0px;
+    }
   .slick-dots li button {
     width: 15px;
     height: 15px;
@@ -167,11 +169,20 @@
       position: absolute;
       left: 2%;
   }
+  .portfolio__design {
+      display: flex;
+      justify-content: center;
+  }
   .modal__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 300px;
+      align-self: center;
       margin-top: 5rem;
-      border: 1px solid #000;
   }
   .modal__item {
+      border: 1px solid #000;
     overflow: hidden;
     width: 300px;
     margin-right: var(--mb-1-5);
