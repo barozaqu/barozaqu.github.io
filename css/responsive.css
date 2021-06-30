@@ -182,7 +182,6 @@
       margin-top: 5rem;
   }
   .modal__item {
-      border: 1px solid #000;
     overflow: hidden;
     width: 300px;
     margin-right: var(--mb-1-5);
