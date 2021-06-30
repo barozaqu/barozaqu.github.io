@@ -7,8 +7,8 @@
         글로벌 변수를 통해 폰트 사이즈를 한번에 반응형에 적용하게 됩니다
     */
     :root {
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
+        --h1-font-size: 5rem;
+        --h2-font-size: 1.5rem;
         --h3-font-size: 1.125rem;
         --big-font-size: 2rem;
         --normal-font-size: .938rem;
@@ -87,9 +87,6 @@
     .footer__content {
         display: none;
     }
-
-
-
     /* about section */
     .about {
         margin-top: 200px;
